@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D078A48199D9D5600BA56EC /* 01 Chocolate.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7D078A47199D9D5600BA56EC /* 01 Chocolate.mp3 */; };
 		7D8FC8C318CB0B3E001D8177 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8FC8C218CB0B3E001D8177 /* Foundation.framework */; };
 		7D8FC8C518CB0B3E001D8177 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8FC8C418CB0B3E001D8177 /* CoreGraphics.framework */; };
 		7D8FC8C718CB0B3E001D8177 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8FC8C618CB0B3E001D8177 /* UIKit.framework */; };
@@ -21,6 +22,12 @@
 		7D8FC8E418CB0B3E001D8177 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8FC8C618CB0B3E001D8177 /* UIKit.framework */; };
 		7D8FC8EC18CB0B3E001D8177 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D8FC8EA18CB0B3E001D8177 /* InfoPlist.strings */; };
 		7D8FC8EE18CB0B3E001D8177 /* MusicPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D8FC8ED18CB0B3E001D8177 /* MusicPlayerTests.m */; };
+		7D8FC8F818CB0BBE001D8177 /* Eminem - Rap God [HQ &amp; Lyrics].mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7D8FC8F718CB0BBE001D8177 /* Eminem - Rap God [HQ &amp; Lyrics].mp3 */; };
+		7D8FC8FA18CB0BDD001D8177 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D8FC8F918CB0BDD001D8177 /* AVFoundation.framework */; };
+		7DE70F59198150A900DA73FC /* Tinie Tempah - Written In The Stars Remix.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7DE70F58198150A900DA73FC /* Tinie Tempah - Written In The Stars Remix.mp3 */; };
+		7DE70F5B198153AF00DA73FC /* MitiS - Born (feat. Collin McLoughlin) (Vocal Mix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7DE70F5A198153AE00DA73FC /* MitiS - Born (feat. Collin McLoughlin) (Vocal Mix).mp3 */; };
+		7DE70F5D1981583200DA73FC /* Witness (feat  Veela)   Approaching Nirvana  Lyrics.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7DE70F5C1981583200DA73FC /* Witness (feat  Veela)   Approaching Nirvana  Lyrics.mp3 */; };
+		7DE70F62198161E000DA73FC /* Some Nights.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7DE70F61198161E000DA73FC /* Some Nights.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D078A47199D9D5600BA56EC /* 01 Chocolate.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "01 Chocolate.mp3"; sourceTree = "<group>"; };
 		7D8FC8BF18CB0B3E001D8177 /* MusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D8FC8C218CB0B3E001D8177 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7D8FC8C418CB0B3E001D8177 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +61,12 @@
 		7D8FC8E918CB0B3E001D8177 /* MusicPlayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MusicPlayerTests-Info.plist"; sourceTree = "<group>"; };
 		7D8FC8EB18CB0B3E001D8177 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7D8FC8ED18CB0B3E001D8177 /* MusicPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicPlayerTests.m; sourceTree = "<group>"; };
+		7D8FC8F718CB0BBE001D8177 /* Eminem - Rap God [HQ &amp; Lyrics].mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Eminem - Rap God [HQ &amp; Lyrics].mp3"; sourceTree = "<group>"; };
+		7D8FC8F918CB0BDD001D8177 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7DE70F58198150A900DA73FC /* Tinie Tempah - Written In The Stars Remix.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tinie Tempah - Written In The Stars Remix.mp3"; sourceTree = "<group>"; };
+		7DE70F5A198153AE00DA73FC /* MitiS - Born (feat. Collin McLoughlin) (Vocal Mix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "MitiS - Born (feat. Collin McLoughlin) (Vocal Mix).mp3"; sourceTree = "<group>"; };
+		7DE70F5C1981583200DA73FC /* Witness (feat  Veela)   Approaching Nirvana  Lyrics.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Witness (feat  Veela)   Approaching Nirvana  Lyrics.mp3"; sourceTree = "<group>"; };
+		7DE70F61198161E000DA73FC /* Some Nights.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Some Nights.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D8FC8FA18CB0BDD001D8177 /* AVFoundation.framework in Frameworks */,
 				7D8FC8C518CB0B3E001D8177 /* CoreGraphics.framework in Frameworks */,
 				7D8FC8C718CB0B3E001D8177 /* UIKit.framework in Frameworks */,
 				7D8FC8C318CB0B3E001D8177 /* Foundation.framework in Frameworks */,
@@ -101,6 +116,7 @@
 		7D8FC8C118CB0B3E001D8177 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7D8FC8F918CB0BDD001D8177 /* AVFoundation.framework */,
 				7D8FC8C218CB0B3E001D8177 /* Foundation.framework */,
 				7D8FC8C418CB0B3E001D8177 /* CoreGraphics.framework */,
 				7D8FC8C618CB0B3E001D8177 /* UIKit.framework */,
@@ -112,6 +128,12 @@
 		7D8FC8C818CB0B3E001D8177 /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				7DE70F58198150A900DA73FC /* Tinie Tempah - Written In The Stars Remix.mp3 */,
+				7DE70F61198161E000DA73FC /* Some Nights.mp3 */,
+				7DE70F5C1981583200DA73FC /* Witness (feat  Veela)   Approaching Nirvana  Lyrics.mp3 */,
+				7D078A47199D9D5600BA56EC /* 01 Chocolate.mp3 */,
+				7DE70F5A198153AE00DA73FC /* MitiS - Born (feat. Collin McLoughlin) (Vocal Mix).mp3 */,
+				7D8FC8F718CB0BBE001D8177 /* Eminem - Rap God [HQ &amp; Lyrics].mp3 */,
 				7D8FC8D118CB0B3E001D8177 /* AppDelegate.h */,
 				7D8FC8D218CB0B3E001D8177 /* AppDelegate.m */,
 				7D8FC8D418CB0B3E001D8177 /* Main.storyboard */,
@@ -196,7 +218,7 @@
 		7D8FC8B718CB0B3E001D8177 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Jamie Walker";
 				TargetAttributes = {
 					7D8FC8DF18CB0B3E001D8177 = {
@@ -230,7 +252,13 @@
 			files = (
 				7D8FC8DB18CB0B3E001D8177 /* Images.xcassets in Resources */,
 				7D8FC8CD18CB0B3E001D8177 /* InfoPlist.strings in Resources */,
+				7DE70F5B198153AF00DA73FC /* MitiS - Born (feat. Collin McLoughlin) (Vocal Mix).mp3 in Resources */,
+				7DE70F5D1981583200DA73FC /* Witness (feat  Veela)   Approaching Nirvana  Lyrics.mp3 in Resources */,
 				7D8FC8D618CB0B3E001D8177 /* Main.storyboard in Resources */,
+				7DE70F62198161E000DA73FC /* Some Nights.mp3 in Resources */,
+				7D078A48199D9D5600BA56EC /* 01 Chocolate.mp3 in Resources */,
+				7DE70F59198150A900DA73FC /* Tinie Tempah - Written In The Stars Remix.mp3 in Resources */,
+				7D8FC8F818CB0BBE001D8177 /* Eminem - Rap God [HQ &amp; Lyrics].mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +333,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -344,7 +371,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -357,7 +383,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -402,7 +428,6 @@
 		7D8FC8F518CB0B3E001D8177 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MusicPlayer.app/MusicPlayer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -425,7 +450,6 @@
 		7D8FC8F618CB0B3E001D8177 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MusicPlayer.app/MusicPlayer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -460,6 +484,7 @@
 				7D8FC8F318CB0B3E001D8177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7D8FC8F418CB0B3E001D8177 /* Build configuration list for PBXNativeTarget "MusicPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +493,7 @@
 				7D8FC8F618CB0B3E001D8177 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
