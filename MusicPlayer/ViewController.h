@@ -22,6 +22,22 @@
     NSTimer *timer;
     
     
+    int shuffleRapGod;
+    int shuffleSomeNights;
+    int shuffleWitness;
+    int shuffleBorn;
+    int shuffleGuessing;
+    int shuffleWritten;
+    NSTimer *RGTimer;
+    NSTimer *SNTimer;
+    NSTimer *WitnessTimer;
+    NSTimer *BTimer;
+    NSTimer *GTimer;
+    NSTimer *WrittenTimer;
+    
+    
+    
+    
     
 }
 
@@ -38,7 +54,7 @@
 -(IBAction)load5;
 -(IBAction)load6;
 -(IBAction)load7;
--(IBAction)all;
+-(IBAction)playAll;
 -(IBAction)shuffle;
 
 

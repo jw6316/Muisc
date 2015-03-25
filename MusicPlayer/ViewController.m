@@ -19,6 +19,28 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
+//    
+//    RGTimer = nil;
+//    WitnessTimer = nil;
+//    WrittenTimer = nil;
+//    SNTimer = nil;
+//    BTimer = nil;
+//    GTimer = nil;
+
+    
+    RGTimer = WitnessTimer = WrittenTimer = SNTimer = GTimer = BTimer = nil;
+    
+    
+    shuffleRapGod = 367;
+    shuffleSomeNights = 301;
+    shuffleWitness = 232;
+    shuffleGuessing = 180;
+    shuffleBorn = 295;
+    shuffleWritten = 184;
+    
+
+    
+    
     
     randomm = arc4random() %5;
 
@@ -32,12 +54,134 @@
     [self v];
 }
 
+-(void)rapGodSelector{
+    shuffleRapGod = shuffleRapGod - 1;
+    
+    if (shuffleRapGod == 0) {
+        [self shuffle];
+        RGTimer = nil;
+    }
+}
+
+
+-(void)rapGodTimer{
+    if (RGTimer == nil) {
+        RGTimer = [NSTimer scheduledTimerWithTimeInterval:1.0    // used for debug, fix to 1 time per sec later.
+                                                   target:self
+                                                 selector:@selector(rapGodSelector)
+                                                 userInfo:nil
+                                                  repeats:YES];
+    }
+    }
+
+-(void)WrittenSelector{
+            shuffleWritten = shuffleWritten - 1;
+            
+            if (shuffleWritten == 0) {
+                [self shuffle];
+                WrittenTimer = nil;
+            }
+        }
+-(void)WrittenTimer{
+            if (WrittenTimer == nil) {
+                WrittenTimer = [NSTimer scheduledTimerWithTimeInterval:1.0    // used for debug, fix to 1 time per sec later.
+                                                           target:self
+                                                         selector:@selector(WrittenSelector)
+                                                         userInfo:nil
+                                                          repeats:YES];
+                
+            }
+        }
+
+
+
+
+
+
+
+-(void)WitnessSelector{
+    shuffleWitness = shuffleWitness - 1;
+                
+    if (shuffleWitness == 0) {
+        [self shuffle];
+        WitnessTimer = nil;
+                }
+            }
+-(void)WitnessTimer{
+    if (WitnessTimer == nil) {
+    WitnessTimer = [NSTimer scheduledTimerWithTimeInterval:1.0    // used for debug, fix to 1 time per sec later.
+                                                    target:self
+                                                  selector:@selector(WitnessSelector)
+                                                  userInfo:nil
+                                                   repeats:YES];
+                    
+        }
+}
+-(void)GuessingSelector{
+        shuffleGuessing = shuffleGuessing - 1;
+                    
+        if (shuffleGuessing == 0) {
+                [self shuffle];
+                GTimer = nil;
+        }
+}
+-(void)GuessingTimer{
+    if (GTimer == nil) {
+            GTimer = [NSTimer scheduledTimerWithTimeInterval:1.0    // used for debug, fix to 1 time per sec later.
+                                                      target:self
+                                                    selector:@selector(GuessingSelector)
+                                                    userInfo:nil
+                                                     repeats:YES];
+                        
+    }
+}
+-(void)BornSelector{
+        shuffleBorn = shuffleBorn - 1;
+                        
+        if (shuffleBorn == 0) {
+                [self shuffle];
+                BTimer = nil;
+        }
+}
+-(void)BornTimer{
+    if (BTimer == nil) {
+        BTimer = [NSTimer scheduledTimerWithTimeInterval:1.0    // used for debug, fix to 1 time per sec later.
+                                                  target:self
+                                                selector:@selector(BornSelector)
+                                                userInfo:nil
+                                                 repeats:YES];
+                            
+    }
+}
+
+-(void)SomeNightsSelector{
+    shuffleSomeNights = shuffleSomeNights - 1;
+    if (shuffleSomeNights == 0) {
+        [self shuffle];
+        BTimer = nil;
+    }
+}
+-(void)SomeNightsTimer{
+    if (SNTimer == nil) {
+        SNTimer = [NSTimer scheduledTimerWithTimeInterval:1.0   // used for debug, fix to 1 time per sec later.
+                                                   target:self
+                                                 selector:@selector(SomeNightsSelector)
+                                                 userInfo:nil
+                                                  repeats:YES];
+                                
+    }
+}
+
+
+
+
+
 
 
 -(IBAction)changeVolume
 {
-    NSLog(@"volume is %f", volumeSlider.value);
-    audio.volume = volumeSlider.value;
+    NSLog(@"volume is %f", (volumeSlider.value*20));
+    audio.volume = volumeSlider.value * 20;
    
 }
 
@@ -139,7 +283,7 @@
 {
     play.hidden = YES;
 
-    NSString *path5 = [[NSBundle mainBundle] pathForResource:@"01 Chocolate" ofType:@"mp3"];
+    NSString *path5 = [[NSBundle mainBundle] pathForResource:@"guessing" ofType:@"mp3"];
     NSURL *url5 = [NSURL fileURLWithPath:path5];
     audio = [[AVAudioPlayer alloc] initWithContentsOfURL:url5 error:nil];
     [audio prepareToPlay];
@@ -190,15 +334,8 @@
         [audio prepareToPlay];
         [audio play];
         
+        [self rapGodTimer];
         
-        if (audio.playing){
-            
-        } else {
-            randomm = random_number;
-            random_number = arc4random () %10;
-            [self shuffle];
-        }
-
     }else if (randomm ==5){
         NSString *path = [[NSBundle mainBundle] pathForResource:@"Eminem - Rap God [HQ &amp; Lyrics]" ofType:@"mp3"];
         NSURL *url = [NSURL fileURLWithPath:path];
@@ -207,14 +344,9 @@
         [audio play];
         
         
-        if (audio.playing){
-            
-        } else {
-            randomm = random_number;
-            random_number = arc4random () %10;
-            [self shuffle];
-        }
-
+        [self rapGodTimer];
+        
+        
     }else if (randomm == 1 ){
         NSString *path2 = [[NSBundle mainBundle] pathForResource:@"Tinie Tempah - Written In The Stars Remix" ofType:@"mp3"];
         NSURL *url2 = [NSURL fileURLWithPath:path2];
@@ -222,13 +354,7 @@
         [audio prepareToPlay];
         [audio play];
         
-        if (audio.playing){
-            
-        } else {
-            randomm = random_number;
-            random_number = arc4random () %10;
-            [self shuffle];
-        }
+        [self WrittenTimer];
     }else if (randomm == 6 ){
         NSString *path2 = [[NSBundle mainBundle] pathForResource:@"Tinie Tempah - Written In The Stars Remix" ofType:@"mp3"];
         NSURL *url2 = [NSURL fileURLWithPath:path2];
@@ -236,16 +362,7 @@
         [audio prepareToPlay];
         [audio play];
         
-        
-        if (audio.playing){
-            
-        } else {
-            randomm = random_number;
-            random_number = arc4random () %10;
-            [self shuffle];
-        }
-       
-        
+        [self WrittenTimer];
         
     }else if (randomm == 2){
         NSString *path3 = [[NSBundle mainBundle] pathForResource:@"MitiS - Born (feat. Collin McLoughlin) (Vocal Mix)" ofType:@"mp3"];
@@ -254,14 +371,7 @@
         [audio prepareToPlay];
         [audio play];
         
-        
-        if (audio.playing){
-            
-        } else {
-            randomm = random_number;
-            random_number = arc4random () %10;
-            [self shuffle];
-        }
+        [self BornTimer];
 
         
     }else if (randomm == 7){
@@ -270,15 +380,7 @@
         audio = [[AVAudioPlayer alloc] initWithContentsOfURL:url3 error:nil];
         [audio prepareToPlay];
         [audio play];
-        
-        
-        if (audio.playing){
-            
-        } else {
-            randomm = random_number;
-            random_number = arc4random () %10;
-            [self shuffle];
-        }
+        [self BornTimer];
 
     
     
@@ -291,14 +393,7 @@
         [audio prepareToPlay];
         [audio play];
         
-        
-        if (audio.playing){
-            
-        } else {
-            randomm = random_number;
-            random_number = arc4random () %10;
-            [self shuffle];
-        }
+        [self WitnessTimer];
      
         
         
@@ -313,49 +408,28 @@
         [audio prepareToPlay];
         [audio play];
         
-        
-        if (audio.playing){
-            
-        } else {
-            randomm = random_number;
-            random_number = arc4random () %10;
-            [self shuffle];
-        }
+        [self WitnessTimer];
 
         
     }else if (randomm == 4){
-        NSString *path5 = [[NSBundle mainBundle] pathForResource:@"01 Chocolate" ofType:@"mp3"];
+        NSString *path5 = [[NSBundle mainBundle] pathForResource:@"guessing" ofType:@"mp3"];
         NSURL *url5 = [NSURL fileURLWithPath:path5];
         audio = [[AVAudioPlayer alloc] initWithContentsOfURL:url5 error:nil];
         [audio prepareToPlay];
         [audio play];
         
-        
-        if (audio.playing){
-            
-        } else {
-            randomm = random_number;
-            random_number = arc4random () %10;
-            [self shuffle];
-        }
+        [self GuessingTimer];
  
         
         
     }else if (randomm == 9){
-        NSString *path5 = [[NSBundle mainBundle] pathForResource:@"01 Chocolate" ofType:@"mp3"];
+        NSString *path5 = [[NSBundle mainBundle] pathForResource:@"guessing" ofType:@"mp3"];
         NSURL *url5 = [NSURL fileURLWithPath:path5];
         audio = [[AVAudioPlayer alloc] initWithContentsOfURL:url5 error:nil];
         [audio prepareToPlay];
         [audio play];
         
-        
-        if (audio.playing){
-            
-        } else {
-            randomm = random_number;
-            random_number = arc4random () %10;
-            [self shuffle];
-        }
+        [self GuessingTimer];
 //        [self random];
 //        [self shuffle];
 //
@@ -400,21 +474,5 @@
 //
 //        
     }
-    
-    
-    
-    
-    
-    
 }
-
-
-
-
-
-
-
-
-
-
 @end
